@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enter the Matrix</title>
+        <style>
+            body {
+                font-family: monospace;
+                font-weight: bold;
+                font-size: 1.25em;
+                color: green;
+                background-color: black;
+            }
+            header {
+                margin-left: auto;
+                margin-right: auto;
+                width: 75%;
+                text-align: center;
+                padding: 30px;
+            }
+            header p span {
+                font-weight: bolder;
+                font-size: 1.35em;
+            }
+            h1 {
+                text-decoration: underline;
+            }
+            #survey-form {
+                width: 75%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                /*background-color: #101010;
+                border-radius: 20px;*/
+            }
+            .layer {
+                background-color: rgba(105,105,105,0.2);
+                border-radius: 20px;
+                margin-top: auto;
+                margin-left: auto;
+                width: 75%;
+                padding: 15px;
+            }
+            .block {
+                margin: 0 auto 1.25rem auto;
+                padding: 0.25rem;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1 id="title">Entrance to the Matrix</h1>
+                <p id ="description"><span>Have you ever wondered if you could be the chosen one and defeat Agent Smith?</span><br>
+                    No need to wonder, jus try it out!<br>
+                    With the groundbreaking technology of <span>Imagine CORP</span>. we are now able to simulate the Simulation! (Among other things)<br>
+                    For only <span>399,-</span> (in every currency) you can access a lifetime in our simulated reality. Every year in the simulation is 10 minutes in our World.<br>
+                    <span style="font-size: 0.8em">Since mental Scarring is obviously not good for kids, but a real possibility with the Matrix, you need to be at least 18 years old. (Terms and Conditions apply)</span></p>
+            </header>
+
+            <form id="survey-form" class="layer">
+
+                <div id="real-life" class="block">
+                    <h2>your identity right now</h2>
+                    <div id="irlName-block">
+                        <label id="irlName-label" for="irlName">*With what name do you identify yourself in this World?</label><br>
+                        <input type="text" id="irlName" name="irlName" placeholder="Your name please." required>
+                    </div>
+
+                    <div id="irlAge-block">
+                        <label id="irlAge-label" for="irlAge">*How old are you right now?</label>
+                        <input type="number" id="irlAge" name="irlAge" placeholder="Your age in years." min="13" max="120" required>
+                    </div>
+                </div>
+
+                <div id="sim-life" class="block">
+                    <h2>your identity in the matrix and your screen name</h2>
+                    <div id="simName-block">
+                        <label id="simName-label" for="simName">*What will your name be in the simulation?</label><br>
+                        <input type="text" id="simName" name="simName" placeholder="Your name in the simulation." required>
+                    </div>
+
+                    <div id="screenName-block">
+                        <label id="screenName-label" for="screenName">*What will your screen/hacker name be?</label><br>
+                        <input type="text" id="screenName" name="screenName" placeholder="Your screen name." required>
+                    </div>
+
+                    <div id="simAge-block">
+                        <label id="simAge-label" for="simAge">With what age will you start?</label>
+                        <input type="number" id="simAge" name="simAge" placeholder="Your preferred age in years." min="0" max="120">
+                    </div>
+
+                    <div id="gender-block">
+                        <label id="gender-label" for="gender">Your preferred gender:</label>
+                        <select id="gender" name="">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="transgender">Transgender</option>
+                            <option value="non-binary/non-conforming">Non-binary/non-conforming</option>
+                            <option value="idc" selected>i don't care what gender i will be</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="world-info" class="block">
+                    <h2>How difficult do you want this challenge to be?</h2>
+                    <div id="difficulty-block" class="block">
+                        <label for="rad-1-1">Easy</label>
+                        <input type="radio" name="r-group1" id="rad-1-1" value="rad-1-1"> 
+                        <p>(Recommended for beginners and easy-goers.)</p>
+                        <label for="rad-1-2">Medium</label>
+                        <input type="radio" name="r-group1" id="rad-1-2" value="rad-1-2">                    
+                        <p>(Kind of like real life. You will fall on your butt quiet a few times.)</p>
+                        <label for="rad-1-3">Hard</label>
+                        <input type="radio" name="r-group1" id="rad-1-3" value="rad-1-3">
+                        <p>(For those who want more of a challenge and want to test out their durability.)</p>
+                        <label for="rad-1-3">Nightmare</label>
+                        <input type="radio" name="r-group1" id="rad-1-3" value="rad-1-3">
+                        <p>(This will make you wish it was just a bad dream that you can wake up from any time.)</p>
+                        <label for="rad-1-3">Insanity</label>
+                        <input type="radio" name="r-group1" id="rad-1-3" value="rad-1-3">
+                        <p>(Are you sure about that? It is called "Insanity" for a reason.)</p>
+                    </div>
+
+                    <h2>Do you have a partner in crime?</h2>
+                    <div id="partner">
+                        <label for="partner-no">radio21</label>
+                        <input type="radio" name="partner" id="partner-no" value="partner-no" selected>
+                        <label for="partner-yes">radio22</label>
+                        <input type="radio" name="partner" id="partner-yes" value="partner-yes">
+                        <label for="partner-name">What is their screenName?</label>
+                        <input type="text" id="partner-name" name="partner" placeholder="The screen name of your partner">
+                    </div>
+
+                    <h2>Who will accompany you on your mission to save the World?</h2>
+                    <div id="check-block">
+                        <label for="trinity">Trinity</label>
+                        <input type="checkbox" name="companion" id="trinity" value="trinity">
+                        <label for="morpheus">Morpheus</label>
+                        <input type="checkbox" name="companion" id="morpheus" value="morpheus">
+                        <label for="cypher">Cypher</label>
+                        <input type="checkbox" name="companion" id="cypher" value="cypher">
+                        <label for="tank">Tank</label>
+                        <input type="checkbox" name="companion" id="tank" value="tank">
+                        <label for="mouse">Mouse</label>
+                        <input type="checkbox" name="companion" id="mouse" value="mouse">
+                        <label for="apoc">Apoc</label>
+                        <input type="checkbox" name="companion" id="apoc" value="apoc">
+                        <label for="dozer">Dozer</label>
+                        <input type="checkbox" name="companion" id="dozer" value="dozer">
+                        <label for="switch">Switch</label>
+                        <input type="checkbox" name="companion" id="switch" value="switch">
+                        <label for="oracle">The Oracle</label>
+                        <input type="checkbox" name="companion" id="oracle" value="oracle">
+                        <label for="companionCube">The Companion Cube</label>
+                        <input type="checkbox" name="companion" id="companionCube" value="companionCube">
+                    </div>
+                </div>  
+                
+                <div id="reason-block" class="block">
+                    <h2>Why do you want to relive Neos life? Tell us in a few short sentences :).</h2>
+                    <label for="textarea"></label>
+                    <textarea id="textarea" name="textarea" rows="4" cols="50">Hier könnte Ihre Werbung stehen.</textarea>
+                </div>
+
+                <div id ="email-block" class="block">
+                    <label id="email-label" for="email">Your E-Mail-Adress</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your E-Mail please" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/i" required>
+                </div>
+
+                <div id="submit-block" class="block">
+                    <label for="submit">Click here to submit!</label>
+                    <input type="submit" id="submit" name="submit">
+                </div>
+                <p>*: Required.</p>
+            </form>
+        </main>
+    </body>
+</html>

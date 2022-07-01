@@ -42,7 +42,7 @@
             }
             .block {
                 margin: 0 auto 1.25rem auto;
-                padding: 0.25rem;
+                padding: 1.25rem;
             }
         </style>
     </head>
@@ -51,7 +51,7 @@
             <header>
                 <h1 id="title">Entrance to the Matrix</h1>
                 <p id ="description"><span>Have you ever wondered if you could be the chosen one and defeat Agent Smith?</span><br>
-                    No need to wonder, jus try it out!<br>
+                    No need to wonder any longer, jus try it out!<br>
                     With the groundbreaking technology of <span>Imagine CORP</span>. we are now able to simulate the Simulation! (Among other things)<br>
                     For only <span>399,-</span> (in every currency) you can access a lifetime in our simulated reality. Every year in the simulation is 10 minutes in our World.<br>
                     <span style="font-size: 0.8em">Since mental Scarring is obviously not good for kids, but a real possibility with the Matrix, you need to be at least 18 years old. (Terms and Conditions apply)</span></p>
@@ -62,13 +62,17 @@
                 <div id="real-life" class="block">
                     <h2>your identity right now</h2>
                     <div id="irlName-block">
-                        <label id="irlName-label" for="irlName">*With what name do you identify yourself in this World?</label><br>
-                        <input type="text" id="irlName" name="irlName" placeholder="Your name please." required>
+                        <!-- the ids HAVE to be name to fulfill the conditions of freeCodeCamps test.
+                            i would rather call it irlName, since it causes less confusion...-->
+                        <label id="name-label" for="name">*With what name do you identify yourself in this World?</label><br>
+                        <input type="text" id="name" name="name" placeholder="Your name please." required>
                     </div>
 
-                    <div id="irlAge-block">
-                        <label id="irlAge-label" for="irlAge">*How old are you right now?</label>
-                        <input type="number" id="irlAge" name="irlAge" placeholder="Your age in years." min="13" max="120" required>
+                    <div id="irlAge-block"> 
+                        <!-- the ids HAVE to be number to fulfill the conditions of freeCodeCamps test.
+                            i would rather call it irlAge...-->
+                        <label id="number-label" for="number">*How old are you right now?</label>
+                        <input type="number" id="number" name="number" placeholder="Your age in years." min="13" max="120" required>
                     </div>
                 </div>
 
@@ -90,8 +94,10 @@
                     </div>
 
                     <div id="gender-block">
-                        <label id="gender-label" for="gender">Your preferred gender:</label>
-                        <select id="gender" name="">
+                        <!-- the id HAS to be dropdown to fulfill the conditions of freeCodeCamps test.
+                            i would rather call it gender...-->
+                        <label id="gender-label" for="dropdown">Your preferred gender:</label>
+                        <select id="dropdown" name="">
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                             <option value="transgender">Transgender</option>
@@ -123,9 +129,9 @@
 
                     <h2>Do you have a partner in crime?</h2>
                     <div id="partner">
-                        <label for="partner-no">radio21</label>
+                        <label for="partner-no">no, i fly solo</label>
                         <input type="radio" name="partner" id="partner-no" value="partner-no" selected>
-                        <label for="partner-yes">radio22</label>
+                        <label for="partner-yes">of course, duh</label>
                         <input type="radio" name="partner" id="partner-yes" value="partner-yes">
                         <label for="partner-name">What is their screenName?</label>
                         <input type="text" id="partner-name" name="partner" placeholder="The screen name of your partner">

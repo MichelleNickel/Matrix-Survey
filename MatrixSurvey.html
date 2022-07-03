@@ -43,7 +43,29 @@
             .block {
                 margin: 0 auto 1.25rem auto;
                 padding: 1.25rem;
+                text-align: center; /*all in the center*/
             }
+            .hideable {
+                visibility: hidden;
+            }
+            #partner-yes:checked ~ *.hideable {
+                visibility: visible;
+            }
+
+            /*<div id="partner">
+                    <label for="partner-no">no, i fly solo</label>
+                    <input type="radio" name="partner" id="partner-no" value="partner-no" selected><br>
+
+                    <label for="partner-yes">of course, duh</label>
+                    <input type="radio" name="partner" id="partner-yes" value="partner-yes"><br>
+
+                    <label for="partner-name">What is their screenName?</label>
+                    <input type="text" id="partner-name" name="partner" placeholder="The screen name of your partner">
+                </div>*/
+
+
+
+
         </style>
     </head>
     <body>
@@ -130,11 +152,12 @@
                     <h2>Do you have a partner in crime?</h2>
                     <div id="partner">
                         <label for="partner-no">no, i fly solo</label>
-                        <input type="radio" name="partner" id="partner-no" value="partner-no" selected>
+                        <input type="radio" name="partner" id="partner-no" value="partner-no" selected><br>
                         <label for="partner-yes">of course, duh</label>
-                        <input type="radio" name="partner" id="partner-yes" value="partner-yes">
-                        <label for="partner-name">What is their screenName?</label>
-                        <input type="text" id="partner-name" name="partner" placeholder="The screen name of your partner">
+                        <input type="radio" name="partner" id="partner-yes" value="partner-yes"><br>
+                        <label class="hideable" for="partner-name">What is their screenName?
+                            <input type="text" id="partner-name" name="partner" placeholder="The screen name of your partner">
+                        </label>
                     </div>
 
                     <h2>Who will accompany you on your mission to save the World?</h2>

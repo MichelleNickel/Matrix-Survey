@@ -51,23 +51,12 @@
             #partner-yes:checked ~ *.hideable {
                 visibility: visible;
             }
-           /* #check-block input[type="checkbox"] {
+            #check-block input[type="checkbox"]{      /*hide the checkbox*/
                 display: none;
             }
-            #check-block input[type="checkbox"] + label[for="companionCube"] {
-                background: url('img/Companion.jpg');
-                background-repeat: no-repeat;
-                background-size: 100%;
-                background-position: left center;
-                width: 164px;
-                height: 306px; 
+            #check-block input[type="checkbox"]:checked::before {
+                scale: 5;
             }
-            #check-block input[type="checkbox"]:checked + label {
-                background: url('img/Conpanion2.jpg');
-                background-position: right center;
-                scale: 0.75em;
-            }*/
-
         </style>
     </head>
     <body>
@@ -164,25 +153,27 @@
 
                     <h2>Who will accompany you on your mission to save the World?</h2>
                     <div id="check-block">
-                        <label for="trinity">Trinity</label>
+                        <label for="neo"><img src="img/Neo3.jpg"></label>
+                        <input type="checkbox" name="companion" id="neo" value="neo">
+                        <label for="trinity"><img src="img/Trinity.jpg"></label>
                         <input type="checkbox" name="companion" id="trinity" value="trinity">
-                        <label for="morpheus">Morpheus</label>
+                        <label for="morpheus"><img src="img/Morpheus3.jpg"></label>
                         <input type="checkbox" name="companion" id="morpheus" value="morpheus">
-                        <label for="cypher">Cypher</label>
+                        <label for="cypher"><img src="img/Cypher1.webp"></label>
                         <input type="checkbox" name="companion" id="cypher" value="cypher">
-                        <label for="tank">Tank</label>
+                        <label for="tank"><img src="img/Tank1.webp"></label>
                         <input type="checkbox" name="companion" id="tank" value="tank">
-                        <label for="mouse">Mouse</label>
+                        <label for="mouse"><img src="img/Mouse1.webp"></label>
                         <input type="checkbox" name="companion" id="mouse" value="mouse">
-                        <label for="apoc">Apoc</label>
+                        <label for="apoc"><img src="img/Apoc.jpg"></label>
                         <input type="checkbox" name="companion" id="apoc" value="apoc">
-                        <label for="dozer">Dozer</label>
+                        <label for="dozer"><img src="img/Dozer.webp"></label>
                         <input type="checkbox" name="companion" id="dozer" value="dozer">
-                        <label for="switch">Switch</label>
+                        <label for="switch"><img src="img/Switch1.webp"></label>
                         <input type="checkbox" name="companion" id="switch" value="switch">
-                        <label for="oracle">The Oracle</label>
+                        <label for="oracle"><img src="img/Trinity.jpg"></label>
                         <input type="checkbox" name="companion" id="oracle" value="oracle">
-                        <label for="companionCube">The Companion Cube</label>
+                        <label for="companionCube"><img src="img/Companion.jpg"></label>
                         <input type="checkbox" name="companion" id="companionCube" value="companionCube">
                     </div>
                 </div>  

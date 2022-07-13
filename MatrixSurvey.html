@@ -51,12 +51,24 @@
             #partner-yes:checked ~ *.hideable {
                 visibility: visible;
             }
-            #check-block input[type="checkbox"]{      /*hide the checkbox*/
+            #check-block input[type="checkbox"] {      
                 display: none;
             }
-            #check-block input[type="checkbox"]:checked::before {
-                scale: 5;
+            #check-block label {
+                display: inline-block;
+                cursor: pointer;
             }
+            #check-block label img {
+                height: 400px;
+                transition-duration: 0.2s;
+                transform-origin: 50% 50%;
+            }
+            #check-block :checked + label img {
+                transform: scale(0.9);
+                box-shadow: 0 0 25px green;
+                z-index: -1;
+            }
+            
         </style>
     </head>
     <body>
@@ -153,28 +165,36 @@
 
                     <h2>Who will accompany you on your mission to save the World?</h2>
                     <div id="check-block">
-                        <label for="neo"><img src="img/Neo3.jpg"></label>
                         <input type="checkbox" name="companion" id="neo" value="neo">
-                        <label for="trinity"><img src="img/Trinity.jpg"></label>
+                        <label for="neo"><img src="img/Neo4.jpeg"></label>
                         <input type="checkbox" name="companion" id="trinity" value="trinity">
-                        <label for="morpheus"><img src="img/Morpheus3.jpg"></label>
+                        <label for="trinity"><img src="img/Trinity8.jpg"></label>
                         <input type="checkbox" name="companion" id="morpheus" value="morpheus">
-                        <label for="cypher"><img src="img/Cypher1.webp"></label>
+                        <label for="morpheus"><img src="img/Morpheus7.jpg"></label>
+                        
                         <input type="checkbox" name="companion" id="cypher" value="cypher">
-                        <label for="tank"><img src="img/Tank1.webp"></label>
+                        <label for="cypher"><img src="img/Cypher2.jpg"></label>
+                        
                         <input type="checkbox" name="companion" id="tank" value="tank">
-                        <label for="mouse"><img src="img/Mouse1.webp"></label>
+                        <label for="tank"><img src="img/Tank3.jpg"></label>
+                        
                         <input type="checkbox" name="companion" id="mouse" value="mouse">
-                        <label for="apoc"><img src="img/Apoc.jpg"></label>
+                        <label for="mouse"><img src="img/Mouse1.jpg"></label>
+                        
                         <input type="checkbox" name="companion" id="apoc" value="apoc">
-                        <label for="dozer"><img src="img/Dozer.webp"></label>
+                        <label for="apoc"><img src="img/Apoc.jpg"></label>
+                        
                         <input type="checkbox" name="companion" id="dozer" value="dozer">
-                        <label for="switch"><img src="img/Switch1.webp"></label>
+                        <label for="dozer"><img src="img/Dozer.webp"></label>
+                        
                         <input type="checkbox" name="companion" id="switch" value="switch">
-                        <label for="oracle"><img src="img/Trinity.jpg"></label>
+                        <label for="switch"><img src="img/Switch.jpg"></label>
+                        
                         <input type="checkbox" name="companion" id="oracle" value="oracle">
-                        <label for="companionCube"><img src="img/Companion.jpg"></label>
+                        <label for="oracle"><img src="img/Oracle2.jpg"></label>
+                        
                         <input type="checkbox" name="companion" id="companionCube" value="companionCube">
+                        <label for="companionCube"><img src="img/Companion4.jpg"></label>
                     </div>
                 </div>  
                 

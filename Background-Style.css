@@ -1,33 +1,15 @@
 @keyframes colorPulse {
         0% {
-        /*color: #e6ffe6;*/
+        color: #e6ffe6;
     }
     40% {
-        /*color: green;*/
+        color: green;
     }
     50% {
-        /*color: #006700;*/
+        color: #006700;
     }
     100% {
         color: #000000;  
-    }
-}
-@media (max-width: 724px){
-    .wrapper {
-        background: black;
-        color: #001a00;
-        font-size: 1em;
-        overflow: hidden;
-        font-family: monospace;
-    }
-}
-@media (min-width: 725px){
-    .wrapper {
-        background: black;
-        color: #001a00;
-        font-size: 1.55vw;
-        overflow: hidden;
-        font-family: monospace;
     }
 }
 .wrapper {
@@ -36,6 +18,30 @@
     overflow: hidden;
     text-align: center;
     width: 100vw;
+    background: black;
+    color: #001a00;
+    overflow: hidden;
+    font-family: monospace;
+}
+@media (max-width: 1300px){
+    .wrapper {
+        font-size: 1em;
+    }
+}
+@media (min-width: 1300px){
+    .wrapper {
+        font-size: 1.75vw;
+    }
+}
+@media (min-width: 1600px){
+    .wrapper {
+        font-size: 1.3em;
+    }
+}
+@media (min-width: 1920px){
+    .wrapper {
+        font-size: 1.55vw;
+    }
 }
 .column * {
     display: block;
